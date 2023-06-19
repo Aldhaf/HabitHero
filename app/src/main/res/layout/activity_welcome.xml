@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:orientation="vertical"
+    android:fillViewport="true"
+    android:fitsSystemWindows="true"
+    tools:context=".welcome.WelcomeActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:scrollbarThumbHorizontal="@null"
+        android:scrollbarThumbVertical="@null">
+
+        <LinearLayout
+            android:layout_centerVertical="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="189dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="50dp"
+                android:src="@drawable/logo_nobg"
+                app:tint="@color/button" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="16dp"
+                android:text="Hey! Welcome"
+                android:textColor="#696969"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="16dp"
+                android:text="We will help your habit for better"
+                android:textColor="#696969"
+                android:textSize="16sp"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/welcome_signin"
+                style="@style/Btn"
+                android:layout_width="342dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:text="@string/button_sign_in" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/welcome_signup"
+                style="@style/welcome"
+                android:layout_width="342dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:text="@string/button_sign_up" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="8dp"
+                app:cardBackgroundColor="@color/colorTextInputBackground"
+                app:cardCornerRadius="24dp"
+                app:cardElevation="0dp"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    app:hintEnabled="false"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>

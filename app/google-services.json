@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "98777911079",
+    "project_id": "projectpbp-c2c70",
+    "storage_bucket": "projectpbp-c2c70.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:98777911079:android:7c0c9581353407c8972302",
+        "android_client_info": {
+          "package_name": "com.project.habithero"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "98777911079-8spnofvh1270vvajsq7lj17gq2bilfs7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDwpE100LCA-uu59lDOogKvLsNsHj5NAIE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "98777911079-8spnofvh1270vvajsq7lj17gq2bilfs7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
