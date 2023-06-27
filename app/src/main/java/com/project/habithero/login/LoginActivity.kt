@@ -5,11 +5,17 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Patterns
 import android.view.View
+import android.widget.TextView
 import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.firestore.ktx.firestore
+import com.google.firebase.ktx.Firebase
+import com.project.habithero.MainActivity
 import com.project.habithero.R
 import com.project.habithero.databinding.ActivityLoginBinding
 import com.project.habithero.forgotpassword.ForgotPasswordActivity
+import com.project.habithero.fragment.HomeFragment
+import com.project.habithero.home.HomeActivity
 import com.project.habithero.register.RegisterActvity
 
 class LoginActivity : AppCompatActivity() {
@@ -55,7 +61,7 @@ class LoginActivity : AppCompatActivity() {
                 binding.etPasswordLog.requestFocus()
                 return@setOnClickListener
             }
-            
+
             LoginFirebase(email,password)
         }
 
@@ -66,19 +72,11 @@ class LoginActivity : AppCompatActivity() {
             .addOnCompleteListener(this){
                 if (it.isSuccessful){
                     Toast.makeText(this, "Login Berhasil", Toast.LENGTH_SHORT).show()
-                    val intent = Intent(this, LoginActivity::class.java)
+                    val intent = Intent(this, HomeActivity::class.java)
                     startActivity(intent)
                 } else {
-                    Toast.makeText(this, "${it.exception?.message}", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this, "gagal login", Toast.LENGTH_SHORT).show()
                 }
             }
     }
-//
-//    fun onClick(view: View) {
-//        if(view.id == R.id.button_signup){
-//            startActivity(Intent(this@LoginActivity, RegisterActvity::class.java))
-//        } else if(view.id == R.id.button_forgot_password){
-//            startActivity(Intent(this@LoginActivity, ForgotPasswordActivity::class.java))
-//        }
-//    }
 }

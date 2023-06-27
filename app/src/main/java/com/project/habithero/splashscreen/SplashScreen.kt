@@ -7,6 +7,7 @@ import android.os.Handler
 import android.view.Window
 import android.view.WindowManager
 import com.project.habithero.databinding.ActivitySplashScreenBinding
+import com.project.habithero.login.LoginActivity
 import com.project.habithero.welcome.WelcomeActivity
 
 class SplashScreen : AppCompatActivity() {
