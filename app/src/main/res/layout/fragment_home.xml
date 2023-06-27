@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.HomeFragment"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tambahkan Kegiatan Anda"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/md_black_1000"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:cardBackgroundColor="@color/colorTextInputBackground"
+        android:layout_margin="4dp"
+        app:cardCornerRadius="24dp"
+        app:cardElevation="0dp">
+
+        <EditText
+            android:id="@+id/et_namaKegiatan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:paddingStart="15dp"
+            android:background="@android:color/transparent"
+            android:drawablePadding="12dp"
+            android:hint="Nama Kegiatan"
+            android:imeOptions="actionNext"
+            android:inputType="textEmailAddress"
+            android:minWidth="320dp"
+            android:minHeight="45dp"
+            android:singleLine="true" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:cardBackgroundColor="@color/colorTextInputBackground"
+        android:layout_margin="4dp"
+        app:cardCornerRadius="24dp"
+        app:cardElevation="0dp">
+
+        <EditText
+            android:id="@+id/et_frekuensi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:paddingStart="15dp"
+            android:background="@android:color/transparent"
+            android:drawablePadding="12dp"
+            android:hint="Frekuensi Kegiatan"
+            android:imeOptions="actionNext"
+            android:inputType="textEmailAddress"
+            android:minWidth="320dp"
+            android:minHeight="45dp"
+            android:singleLine="true" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:cardBackgroundColor="@color/colorTextInputBackground"
+        android:layout_margin="4dp"
+        app:cardCornerRadius="24dp"
+        app:cardElevation="0dp">
+
+        <EditText
+            android:id="@+id/et_tanggalKegiatan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:paddingStart="15dp"
+            android:background="@android:color/transparent"
+            android:drawablePadding="12dp"
+            android:hint="Tanggal Mulai Kegiatan"
+            android:imeOptions="actionNext"
+            android:inputType="textEmailAddress"
+            android:minWidth="320dp"
+            android:minHeight="45dp"
+            android:singleLine="true" />
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/button_tambahKegiatan"
+        style="@style/buttonlogin"
+        android:layout_width="342dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="20dp"
+        android:text="Tambah Kegiatan" />
+
+</LinearLayout>
